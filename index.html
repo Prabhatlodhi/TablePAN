@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment To DO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>User-Data Form</h1>
+        <div> 
+        <input type="search" placeholder="Search for the user by PAN-CARD..." id="searchbox">
+
+
+        <button class="btnbtn  button-89" role="button" id="atoz" onclick="sortingByName()" >A-Z</button>
+        <button class="btnbtn  button-89" role="button"  id="ztoa" onclick="sortingByName2()">Z-A </button>
+
+
+      </div>
+      </nav>
+    </header>
+
+    <table id="firstTable">
+      <thead>
+        <td id="lo">Name</td>
+        <td>Date of Birth</td>
+        <td>Pan Number</th>
+        <td>Mobile Number</td>
+        <td>Age</td>
+        <td>Action</td>
+      </thead>
+
+      <thead>
+        <form action=""> 
+            <td><input type="text" id="Input_Name_Data" /><input type="hidden" id="saveindex"></td>
+            <td><input type="date" name="" id="Input_Date"/></td>
+            <td><input type="text" id="Input_PanNum" /></td>
+            <td><input type="tel" id="Input_MobileNum" /></td>
+            <td><input type="text"  id="Input_Age"/></td>
+            <td><input type="submit"id="Submit_Btn"/><button type="button" class="btn  button-89" role="button" id="savetaskbtn" style="display: none;"> SAVE Task </button></td>
+        </form>
+      </thead>
+    </table>
+
+     
+
+      
+    </table>
+
+    <table id="second_table">
+      <thead>
+        <td id="lo">Name</td>
+        <td>Date of Birth</td>
+        <td>Pan Number</td>
+        <td>Mobile Number</td>
+        <td>Age</td>
+        <td>Action</td>
+      </thead>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
